@@ -1,0 +1,11 @@
+## To run just one line:
+sp_alter_column dbo, customers ,name, fullname,'varchar(100)',1;
+
+"The last parameter, executionmode, can be used 0 or 1, where:
+-> 0 does not run, only displays commands
+-> 1 executes the commands
+
+## To run multiple lines
+
+EXECUTE sp_alter_column dbo, customers ,name, fullname,'varchar(100)',1;
+EXECUTE sp_alter_column dbo, employee  ,name, fullname,'varchar(100)',1;
